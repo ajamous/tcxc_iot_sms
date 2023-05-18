@@ -1,4 +1,4 @@
-# MQTT Telemetry to SMS Script
+# IoT CarTelemetry to NeuTrafix SMS Notification Script
 
 This script connects to an MQTT broker, subscribes to the "CarTelemetry" topic, and sends an SMS message containing the received telemetry data using the NeuTrafix SMS API.
 
