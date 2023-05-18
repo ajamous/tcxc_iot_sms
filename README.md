@@ -2,6 +2,11 @@
 
 This script connects to an MQTT broker, subscribes to the "CarTelemetry" topic, and sends an SMS message containing the received telemetry data using the NeuTrafix SMS API.
 
+## Use Case: IoT Vehicle Monitoring and Alerting
+
+This script enables real-time monitoring and alerting for IoT vehicle telemetry data. It connects to an MQTT broker and subscribes to the "CarTelemetry" topic to receive telemetry messages. Upon receiving a message, it extracts relevant information from the telemetry data, such as VIN, speed, fuel level, and location coordinates. The extracted data is then used to send an SMS notification using the NeuTrafix SMS API.
+
+
 ## Installation
 
 1. Clone the repository or download the script file.
@@ -27,7 +32,7 @@ python mqtt_telemetry_to_sms.py
 The script will connect to the TCXC IoT MQTT broker, subscribe to the "CarTelemetry" topic, and start listening for incoming telemetry messages. Once a message is received, it will be sent as an SMS using the configured SMS API.
 
 
-## Use Cases
+## Other Use Cases
 
 - **IoT Telemetry Monitoring**:🌐 This script enables you to monitor telemetry data from IoT devices using MQTT and receive real-time SMS notifications. It can be used in applications such as remote asset monitoring, environmental sensing, and industrial control systems.
 
